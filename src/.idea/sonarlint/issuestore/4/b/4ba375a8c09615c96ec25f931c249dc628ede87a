@@ -1,0 +1,10 @@
+
+I
+java:S11210".Extract the assignment out of this expression.(¹—¡­ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ×÷éøÿÿÿÿ
+O
+java:S3516)"9Refactor this method to not always return the same value.(ÚÃ…é
+V	java:S125."<This block of commented-out lines of code should be removed.(†àÐ¯úÿÿÿÿ
+W
+java:S1126>"AReplace this if-then-else statement by a single return statement.(äÜ¾Ë
+V	java:S125@"<This block of commented-out lines of code should be removed.(ó¹ëÝûÿÿÿÿ
