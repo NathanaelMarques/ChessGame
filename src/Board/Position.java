@@ -13,7 +13,7 @@ public class Position {
 		return row;
 	}
 
-	public void setRow(int row) {// remove
+	public void setRow(int row) {
 		this.row = row;
 	}
 
@@ -21,7 +21,7 @@ public class Position {
 		return column;
 	}
 
-	public void setColumn(int column) {//remove
+	public void setColumn(int column) {
 		this.column = column;
 	}
 

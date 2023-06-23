@@ -1,13 +1,0 @@
-
-0
-java:S1220""Move this file to a named package.
-=
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
-W
-java:S1854"ARemove this useless assignment to local variable "capturedPiece".(¤ìïö
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¤Åœşÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÁÏãêşÿÿÿÿ
-H
-java:S1481"2Remove this unused "capturedPiece" local variable.(¤ìïö
