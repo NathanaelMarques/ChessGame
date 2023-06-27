@@ -2,13 +2,16 @@ package Chess.Pieces;
 
 import Board.Board;
 import Board.Position;
+import Chess.ChessMatch;
 import Chess.ChessPiece;
 import Chess.Color;
 
 public class Pawn extends ChessPiece {
-
-	public Pawn(Board board, Color color) {
+	
+	private ChessMatch chessMatch;
+	public Pawn(Board board, Color color, ChessMatch chessMatch) {
 		super(board, color);
+		this.chessMatch = chessMatch;
 	}
 
 	@Override
@@ -16,7 +19,6 @@ public class Pawn extends ChessPiece {
 		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];		
 		Position p = new Position(0, 0);
 		final int movimentoParaCima = super.getColor() == Color.WHITE ? -1 : 1;
-		//final int movimentoParaBaixo = super.getColor() == Color.WHITE ? 1 : -1;
 		final int movimentoParaLadoE = -1;
 		final int movimentoParaLadoD = 1;
 		
@@ -42,6 +44,16 @@ public class Pawn extends ChessPiece {
 		p.setValues(position.getRow() + movimentoParaCima,position.getColumn() + movimentoParaLadoD);
 		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
+		}
+		if ((this.getColor() == Color.WHITE && position.getRow() == 3) || (this.getColor() == Color.BLACK && position.getRow() == 4)) { //enpassant
+			Position left = new Position (position.getRow(), position.getColumn() - 1);
+			if (getBoard().positionExists(left) && isThereOpponentPiece(left) && getBoard().piece(left) == chessMatch.getEnPassantVulnerable()) {
+				mat[left.getRow() + movimentoParaCima][left.getColumn()] = true;
+			}
+			Position right = new Position (position.getRow(), position.getColumn() + 1);
+			if (getBoard().positionExists(right) && isThereOpponentPiece(right) && getBoard().piece(right) == chessMatch.getEnPassantVulnerable()) {
+				mat[right.getRow() + movimentoParaCima][right.getColumn()] = true;
+			}
 		}
 		return mat;
 	}
