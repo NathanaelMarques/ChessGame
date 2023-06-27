@@ -1,70 +1,10 @@
-# Arquivos gerados pelo IntelliJ IDEA
+# .gitignore
+
+# Ignorar diretório .idea
 .idea/
 
-# Arquivos gerados pelo Eclipse
-.classpath
-.project
+# Ignorar diretório .settings
 .settings/
 
-# Cache do Eclipse
-.target/
-*/target/
-*.target/
-
-# Arquivos de compilação e saída
-bin/
-bin-debug/
-bin-release/
-bin-build/
-bin-*/
-build/
-build-output/
-classes/
+# Ignorar diretório out
 out/
-output/
-dist/
-deploy/
-
-# Logs
-log/
-logs/
-*.log
-
-# Arquivos temporários
-*.tmp
-*.bak
-
-# Outros arquivos específicos do IntelliJ IDEA
-*.iml
-*.ipr
-*.iws
-*.ids
-*.java.dependency
-*.jiml
-
-# Outros arquivos específicos do Eclipse
-.metadata/
-*.bak
-*.swp
-*~
-*#
-*.#*
-*.pydevproject
-
-# Arquivos de configuração do Eclipse
-.remote/
-.remoteLaunch/
-.recommenders/
-
-# Arquivos de configuração do Maven
-.mvn/
-target/
-
-# Arquivos de configuração do Gradle
-.gradle/
-build/
-
-# Arquivos específicos do Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
