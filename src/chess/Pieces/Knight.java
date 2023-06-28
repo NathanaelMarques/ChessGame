@@ -1,9 +1,9 @@
-package Chess.Pieces;
+package chess.Pieces;
 
-import Board.Board;
-import Board.Position;
-import Chess.ChessPiece;
-import Chess.Color;
+import board.Board;
+import board.Position;
+import chess.ChessPiece;
+import chess.Color;
 
 public class Knight extends ChessPiece{
 

@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import Chess.ChessMatch;
-import Chess.ChessPiece;
-import Chess.ChessPosition;
-import Chess.Color;
+import chess.ChessMatch;
+import chess.ChessPiece;
+import chess.ChessPosition;
+import chess.Color;
 
 	public class UI {
 
@@ -94,10 +94,10 @@ import Chess.Color;
         }
         else {
             if (piece.getColor() == Color.WHITE) {
-                System.out.print(ANSI_RED + piece + ANSI_RESET);
+                System.out.print(ANSI_WHITE + piece + ANSI_RESET);
             }
             else {
-                System.out.print(ANSI_BLACK + piece + ANSI_RESET);
+                System.out.print(ANSI_GREEN + piece + ANSI_RESET);
             }
         }
         System.out.print(" ");
@@ -113,7 +113,7 @@ import Chess.Color;
 		System.out.print(ANSI_RESET);
 		
 		System.out.print("BLACK:");
-		System.out.print(ANSI_BLACK);
+		System.out.print(ANSI_GREEN);
 		System.out.println(Arrays.toString(black.toArray()));
 		System.out.print(ANSI_RESET);
 		

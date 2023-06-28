@@ -4,10 +4,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import Board.BoardException;
-import Chess.ChessMatch;
-import Chess.ChessPiece;
-import Chess.ChessPosition;
+import board.BoardException;
+import chess.ChessMatch;
+import chess.ChessPiece;
+import chess.ChessPosition;
 
 public class Main {
 

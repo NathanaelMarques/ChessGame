@@ -1,10 +1,4 @@
-# .gitignore
-
-# Ignorar diretório .idea
-.idea/
-
-# Ignorar diretório .settings
-.settings/
-
-# Ignorar diretório out
-out/
+/out/
+/.idea/
+/bin/
+/ChessGame.iml
